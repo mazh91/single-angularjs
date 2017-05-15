@@ -1,9 +1,13 @@
 (function () {
 'use strict';
 
-angular.module('myFirstApp', [])
+angular.module('LunchCheck', [])
 
-.controller('MyFirstController', function ($scope) {
+.controller('LunchCheckController', LunchCheckController);
+
+LunchCheckController.$inject($scope);
+
+function LunchCheckController($scope) {
   $scope.name = "Yaakov";
   $scope.sayHello = function () {
     return "Hello Coursera!";
