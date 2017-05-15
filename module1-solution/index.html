@@ -19,11 +19,11 @@
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
          </div>
-         <div class="form-group" ng-model="check_btn">
+         <div class="form-group" ng-click="doCheck();">
              <button class="btn btn-default">Check If Too Much</button>
          </div>
-         <div class="form-group message">
-           <!-- Your message can go here. -->
+         <div class="form-group message" >
+           {{msg}}
          </div>
    </div>
 </body>
